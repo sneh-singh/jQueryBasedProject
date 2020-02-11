@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Align div anywhere and also treat as dialog</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link href="jq_modulebase_assignment.css" type="text/css" rel="stylesheet" />
+		<script src="jq_modulebase_assignment.js"></script>
+	</head>
+	<body>
+		<div id="dialog" title="Basic dialog" class="dialog_div">
+			<p>Drag Properly</p>
+		</div>
+		<div class="first_div all_div" id="drag_one" ondragstart="dragDiv(this)">
+			<div class="dialog_title">Top Handle</div>	
+			<div>Div One</div>
+		</div>
+		<div class="second_div all_div" id="drag_two" ondragstart="dragDiv(this)">
+			<div class="dialog_title">Top Handle</div>
+			<span>Div Two</span>
+		</div>
+		<div class="third_div all_div" id="drag_three" ondragstart="dragDiv(this)">
+			<div class="dialog_title">Top Handle</div>
+			<span>Div Three</span>
+		</div>
+		<div class="fourth_div all_div" id="drag_four" ondragstart="dragDiv(this)">
+			<div class="dialog_title">Top Handle</div>
+			<span>Div Four</span>
+		</div>
+		<div class="center_div" id="middle_div" ondrop="dropDiv()">Drop Div Here!</div>
+	</body>
+</html>

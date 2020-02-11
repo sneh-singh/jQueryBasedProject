@@ -1,0 +1,56 @@
+.all_div, .center_div, .dialog_box
+{
+	height: 100px;
+	width: 200px;
+	background: #ccc;
+	border: 2px solid #bbb;
+}
+.all_div, .center_div
+{
+	position: fixed;
+	text-align: center;
+}
+.first_div, .second_div
+{
+	top:0;
+}
+.first_div, .third_div
+{
+	left: 0;
+}
+.fourth_div, .second_div
+{
+	right: 0;
+}
+.fourth_div, .third_div
+{
+	bottom: 0;
+}
+.center_div
+{
+	left: 40%;
+	top: 40%;
+	z-index: -1;
+}
+.dialog_div
+{
+	display: none;
+}
+.dialog_box
+{
+	z-index: 10;
+	position: relative;
+	left: 20%;
+}
+.dialog_title
+{
+	background: #bbb;
+	cursor: move;
+	padding: 3px;
+	border-radius: 3px;
+	margin: 3px;
+}
+.cross_button
+{
+	float: right;
+}
